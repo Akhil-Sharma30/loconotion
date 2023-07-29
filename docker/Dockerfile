@@ -16,7 +16,7 @@ RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/direct/goog
 ENV CHROMEDRIVER_DIR /chromedriver
 RUN mkdir $CHROMEDRIVER_DIR
 # Download and install Chromedriver
-RUN wget -q --continue -P $CHROMEDRIVER_DIR "https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip"
+RUN wget -q --continue -P $CHROMEDRIVER_DIR "https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_linux64.zip"
 RUN unzip $CHROMEDRIVER_DIR/chromedriver* -d $CHROMEDRIVER_DIR
 # Put Chromedriver into the PATH
 ENV PATH $CHROMEDRIVER_DIR:$PATH
